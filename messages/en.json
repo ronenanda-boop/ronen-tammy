@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "studio": "Studio",
+    "works": "Works",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "home": {
+    "heroTitle": "Ronen & Tammy Izhaki",
+    "heroSubtitle": "Visual storytellers crafting motion, sound and light.",
+    "featuredTitle": "Featured Works",
+    "ctaStudio": "Visit the Studio"
+  },
+  "studio": {
+    "visionTitle": "Studio Vision",
+    "bookingTitle": "Book a Session",
+    "formTitle": "Send a Booking Request",
+    "formSuccess": "Request sent successfully. We'll be in touch soon!",
+    "formError": "Something went wrong. Please try again.",
+    "embedTitle": "Scheduling"
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "formSuccess": "Message sent. Thank you!",
+    "formError": "We couldn't send your message. Try again shortly.",
+    "formTitle": "Send a Message"
+  },
+  "common": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Submit",
+    "optional": "Optional",
+    "notes": "Notes",
+    "date": "Date",
+    "from": "From",
+    "to": "To"
+  },
+  "limited": {
+    "enNotice": "Full content is currently available in Hebrew.",
+    "viewInHebrew": "View in Hebrew"
+  },
+  "footer": {
+    "rights": "All rights reserved to Ronen & Tammy Izhaki"
+  }
+}
