@@ -1,0 +1,58 @@
+<svg width="440" height="100" viewBox="0 0 440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- RONEN -->
+    <g transform="translate(0,8)">
+      <path d="M5 0V32M5 0H21C28 0 28 14 21 14H5M21 14L32 32" />
+    </g>
+    <g transform="translate(40,8)">
+      <path d="M18 0C8 0 3 8 3 16C3 24 8 32 18 32C28 32 33 24 33 16C33 8 28 0 18 0Z" />
+    </g>
+    <g transform="translate(80,8)">
+      <path d="M3 32V0L33 32V0" />
+    </g>
+    <g transform="translate(120,8)">
+      <path d="M36 0H3V32H36M3 16H26" />
+    </g>
+    <g transform="translate(160,8)">
+      <path d="M3 32V0L33 32V0" />
+    </g>
+    <!-- TAMMY -->
+    <g transform="translate(0,52)">
+      <path d="M3 0H33M18 0V32" />
+    </g>
+    <g transform="translate(40,52)">
+      <path d="M18 0L3 32H33L18 0M11 20H25" />
+    </g>
+    <g transform="translate(80,52)">
+      <path d="M3 32V0L18 18L33 0V32" />
+    </g>
+    <g transform="translate(120,52)">
+      <path d="M3 32V0L18 18L33 0V32" />
+    </g>
+    <g transform="translate(160,52)">
+      <path d="M3 0L18 18L33 0M18 18V32" />
+    </g>
+    <!-- IZHAKI -->
+    <g transform="translate(200,52)">
+      <path d="M3 0H33M18 0V32M3 32H33" />
+    </g>
+    <g transform="translate(240,52)">
+      <path d="M3 0H33L3 32H33" />
+    </g>
+    <g transform="translate(280,52)">
+      <path d="M3 0V32M33 0V32M3 16H33" />
+    </g>
+    <g transform="translate(320,52)">
+      <path d="M18 0L3 32H33L18 0M11 20H25" />
+    </g>
+    <g transform="translate(360,52)">
+      <path d="M3 0V32M33 0L3 16L33 32" />
+    </g>
+    <g transform="translate(400,52)">
+      <path d="M3 0H33M18 0V32M3 32H33" />
+    </g>
+  </g>
+  <g stroke="#5b6bff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(200,8)">
+    <path d="M30 6C26 0 12 0 8 8C4 14 6 20 12 22C6 24 6 32 12 36C18 40 26 38 26 32L18 24M26 32L34 40" />
+  </g>
+</svg>
