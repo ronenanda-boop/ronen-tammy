@@ -1,5 +1,5 @@
 import { createTranslator } from "next-intl";
-import Link from "next-intl/link";
+import Link from 'next/link';
 import HeroVideo from "@/components/HeroVideo";
 import WorkCard from "@/components/WorkCard";
 import { getMessages } from "@/lib/i18n";
