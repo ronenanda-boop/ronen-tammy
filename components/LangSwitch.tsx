@@ -2,7 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
-import Link from "next-intl/link";
+import Link from 'next/link';
 import { locales, defaultLocale, type Locale } from "@/lib/i18n";
 
 const corePaths = new Set(["", "about", "studio", "contact"]);
