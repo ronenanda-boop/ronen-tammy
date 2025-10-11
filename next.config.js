@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    // typedRoutes: true, // מבוטל
+    // השאר את זה כבוי
+    // typedRoutes: true,
   },
 };
-module.exports = nextConfig;
 
+module.exports = nextConfig;
