@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next-intl/link";
+import Link from 'next/link';
+
 
 interface LogoProps {
   href: string;
