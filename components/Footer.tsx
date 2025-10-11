@@ -38,21 +38,21 @@ export default function Footer({ email, phone, socials }: FooterProps) {
           <p>{t("rights")}</p>
         </div>
         <div className="flex items-center gap-4 text-sm text-foreground/70">
-          {socials?.instagram && (
-            <Link href={socials.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
-              Instagram
-            </Link>
-          )}
-          {socials?.facebook && (
-            <Link href={socials.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
-              Facebook
-            </Link>
-          )}
-          {socials?.youtube && (
-            <Link href={socials.youtube} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
-              YouTube
-            </Link>
-          )}
+{typeof socials?.instagram === "string" && (
+  <a href={socials.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
+    Instagram
+  </a>
+)}
+{typeof socials?.facebook === "string" && (
+  <a href={socials.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
+    Facebook
+  </a>
+)}
+{typeof socials?.youtube === "string" && (
+  <a href={socials.youtube} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
+    YouTube
+  </a>
+)}
         </div>
       </div>
     </footer>
