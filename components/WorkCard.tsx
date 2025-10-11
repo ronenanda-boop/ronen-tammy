@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next-intl/link";
+import Link from 'next/link';
 import type { Work } from "@/types/content";
 import { urlForImage } from "@/lib/sanity.image";
 
