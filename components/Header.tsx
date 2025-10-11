@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import Link from "next-intl/link";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "classnames";
 import Logo from "./Logo";
