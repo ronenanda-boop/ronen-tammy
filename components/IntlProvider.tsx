@@ -1,24 +1,24 @@
-"use client";
+'use client';
 
-import { NextIntlClientProvider } from "next-intl";
-import { ReactNode, useEffect } from "react";
+import * as React from 'react';
+import { NextIntlClientProvider } from 'next-intl';
+import type { AbstractIntlMessages } from 'next-intl';
 
-interface IntlProviderProps {
+type IntlProviderProps = {
+  children: React.ReactNode;
   locale: string;
-  messages: Record<string, unknown>;
-  children: ReactNode;
+  // מגיע לעיתים כ-unknown/Record<string, unknown> מהפאץ' של ההודעות
+  messages: unknown;
+};
+
+// ליהוק בטוח עבור next-intl
+function asMessages(input: unknown): AbstractIntlMessages {
+  return input as AbstractIntlMessages;
 }
 
-export default function IntlProvider({ locale, messages, children }: IntlProviderProps) {
-  useEffect(() => {
-    if (typeof document !== "undefined") {
-      document.documentElement.lang = locale;
-      document.documentElement.dir = locale === "he" ? "rtl" : "ltr";
-    }
-  }, [locale]);
-
+export default function IntlProvider({ children, locale, messages }: IntlProviderProps) {
   return (
-    <NextIntlClientProvider locale={locale} messages={messages} timeZone="Asia/Jerusalem">
+    <NextIntlClientProvider locale={locale} messages={asMessages(messages)}>
       {children}
     </NextIntlClientProvider>
   );
