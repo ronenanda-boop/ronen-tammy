@@ -13,6 +13,7 @@ const navItems = [
   { key: "about", path: "about" },
   { key: "studio", path: "studio" },
   { key: "works", path: "works" },
+  { key: "snake", path: "snake" },
   { key: "contact", path: "contact" }
 ];
 
@@ -32,15 +33,20 @@ export default function Header() {
         <Logo href={locale === defaultLocale ? "/" : `/${locale}`} locale={locale} />
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           {navItems.map((item) => {
-            if (item.key === "works" && locale !== "he") {
+            if ((item.key === "works" || item.key === "snake") && locale !== "he") {
+              const hebrewHref = item.path ? `/${item.path}` : "/";
               return (
-                <Link key={item.key} href="/works" locale="he" className="text-foreground/60 hover:text-accent">
+                <Link key={item.key} href={hebrewHref} locale="he" className="text-foreground/60 hover:text-accent">
                   {t(item.key)}
                 </Link>
               );
             }
             const href = buildHref(item.path, locale);
-            const isActive = pathname === href || (href === "/" && pathname === "/");
+            let isActive = pathname === href || (href === "/" && pathname === "/");
+            if ((item.key === "works" || item.key === "snake") && locale !== "he") {
+              const hebrewHref = item.path ? `/${item.path}` : "/";
+              isActive = pathname === hebrewHref;
+            }
             return (
               <Link
                 key={item.key}
